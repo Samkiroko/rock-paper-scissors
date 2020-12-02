@@ -1,5 +1,6 @@
 void main() {
   print('hello world');
+  // while true
   // show prompt
   // Read user from console
   // if input is valid move("r","p","s")
