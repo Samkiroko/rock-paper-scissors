@@ -1,9 +1,23 @@
 import 'dart:io';
 
+enum Move {
+  rock,
+  paper,
+  scissors,
+}
 void main() {
-  stdout.write('Rock, paper or Scissors? (r/p/s)');
-  final input = stdin.readLineSync();
-  print(input);
+  while (true) {
+    stdout.write('Rock, paper or Scissors? (r/p/s)');
+    final input = stdin.readLineSync();
+    if (input == 'r' || input == 'p' || input == 's') {
+      print('Selected: $input');
+    } else if (input == 'q') {
+      break;
+    } else {
+      print('Invalid input');
+    }
+  }
+
   // while true
   // show prompt
   // Read user from console
